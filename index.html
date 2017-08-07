@@ -8,6 +8,12 @@
 
 
     <title>Classic Cleaning by Moms</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -138,7 +144,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="text-primary text-center">Services</h2>
-                    <h3>As long as we are allotted enough time, we can clean in great detail! We are accustomed to customers who have high standards. Our customers appreciate our attention to detail.</h3>
+
 
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
@@ -221,9 +227,10 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class="text-primary text-center">Rates</h2>
+                    <h3 class="text-center">Get a free in-home quote  from our Supervisor!</h3>
 
 
-                    <p>We estimate hours that are sufficient to provide the great attention to detail that <strong class="co-name">Classic Cleaning by Moms</strong> is known for.</p>
+                    <p>We estimate hours that are sufficient to provide the great attention to detail that <strong class="co-name">Classic Cleaning by Moms</strong> is known for. </p>
 
                     <p>Our staff typically works in teams of two. After the initial cleaning, it is optional to supply your own cleaning products. We have a supply list of recommended quality products that will help us get the job done right. Green products are available upon request.</p>
 
@@ -337,11 +344,11 @@
                 </div>
                 <div class="col-lg-7">
                     <h2 class="text-center"><span class="co-name">Classic Cleaning by Moms</span> Inquiry</h2>
-                    <p class="text-center">Use the feedback form below for more information.</p>
+                    <p class="text-center">Use the feedback form below for more information. Some information is required, however, more information helps us provide a more accurate quote. We value your privacy, and will not enroll you in automatic emails or share your information with anyone else.</p>
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Name</label>
-                            <input type="text" class="form-control" id="cust-name" placeholder="Enter Name">
+                            <label for="exampleInputEmail1">Name *</label>
+                            <input type="text" class="form-control" id="cust-name" placeholder="Enter Name" required>
                         </div>
 
                         <div class="form-group">
@@ -349,24 +356,24 @@
                             <input type="text" class="form-control" id="st-address" placeholder="Street Address">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">City, State, Zip</label>
-                            <input type="text" class="form-control" id="city-st-zip" placeholder="City, State, Zip">
+                            <label for="exampleInputPassword1">City, State, Zip *</label>
+                            <input type="text" class="form-control" id="city-st-zip" placeholder="City, State, Zip" required>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="phone">Best Contact Number</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="Enter Best Contact Number">
+                                    <label for="phone">Best Contact Number *</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Enter Best Contact Number" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                                    <label for="exampleInputEmail1">Email address *</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" required>
                                 </div>
                             </div>
 
-                            <div class="col-sm-3">
-                                <label for="phone">Best Contact Method</label>
+                            <div class="col-sm-4">
+                                <label for="phone">Best Contact Method *</label>
 
                                 <div class="form-group">
 
@@ -379,11 +386,13 @@
 
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <label for="phone">Type of Service</label>
                                 <select class="form-control">
+                                    <option>Please Select</option>
                                     <option>Weekly</option>
                                     <option> Bi-Weekly</option>
+                                    <option>Monthly</option>
                                     <option>As Needed</option>
                                     <option>Real Estate Cleanup</option>
 
@@ -402,6 +411,7 @@
                             <div class="col-sm-3">
                                 <label for="rooms">Bedrooms</label>
                                 <select class="form-control">
+                                    <option>Please Select</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -413,6 +423,7 @@
                             <div class="col-sm-3">
                                 <label for="bathrooms">Bathrooms</label>
                                 <select class="form-control">
+                                    <option>Please Select</option>
                                     <option>1</option>
                                     <option>1.5</option>
                                     <option>2</option>
@@ -430,6 +441,7 @@
                             <div class="col-sm-3">
                                 <label for="rooms">Pets</label>
                                 <select class="form-control">
+                                    <option>Please Select</option>
                                     <option>0</option>
                                     <option>1</option>
 
