@@ -356,30 +356,31 @@
                 <div class="col-lg-7">
                     <h2 class="text-center"><span class="co-name">Classic Cleaning by Moms</span> Inquiry</h2>
                     <p class="text-center">Use the feedback form below for more information. Some information is required, however, more information helps us provide a more accurate quote. We value your privacy, and will not enroll you in automatic emails or share your information with anyone else.</p>
+
                     <form method="post" action="mailer.php" class="contact-form">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Name *</label>
-                            <input type="text" class="form-control" id="cust-name" placeholder="Enter Name" required>
+                            <label for="name">Name *</label>
+                            <input type="text" class="form-control" id="cust-name" name="cust-name" placeholder="Enter Name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Street Address</label>
-                            <input type="text" class="form-control" id="st-address" placeholder="Street Address">
+                            <label for="st-address">Street Address</label>
+                            <input type="text" class="form-control" id="st-address" name="st-address" placeholder="Street Address">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">City, State, Zip *</label>
-                            <input type="text" class="form-control" id="city-st-zip" placeholder="City, State, Zip" required>
+                            <label for="city-st-zip">City, State, Zip *</label>
+                            <input type="text" class="form-control" id="city-st-zip" name="city-st-zip" placeholder="City, State, Zip" required>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="phone">Best Contact Number *</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="Enter Best Contact Number" required>
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Best Contact Number" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address *</label>
-                                    <input type="email" class="form-control" id="Email" placeholder="Enter Email" required>
+                                    <label for="Email">Email address *</label>
+                                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter Email" required>
                                 </div>
                             </div>
 
@@ -389,17 +390,17 @@
                                 <div class="form-group">
 
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox1" value="email-me"> Email
+                                        <input type="checkbox" id="email-me" name="email-me" value="email-me"> Email
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox2" value="call-me"> Call
+                                        <input type="checkbox" id="call-me" name="call-me" value="call-me"> Call
                                     </label>
 
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <label for="service-type">Type of Service</label>
-                                <select class="form-control">
+                                <select class="form-control" id="service-type" name="service-type">
                                     <option>Please Select</option>
                                     <option>Weekly</option>
                                     <option> Bi-Weekly</option>
@@ -416,12 +417,12 @@
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <label for="sqft">Approx square ft</label>
-                                    <input type="text" class="form-control" id="sqft" placeholder="Enter approx sq ft">
+                                    <input type="text" class="form-control" id="sqft" name="sqft" placeholder="Enter approx sq ft">
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <label for="rooms">Bedrooms</label>
-                                <select class="form-control">
+                                <select class="form-control" id="bedrooms" name="bedrooms">
                                     <option>Please Select</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -433,7 +434,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <label for="bathrooms">Bathrooms</label>
-                                <select class="form-control">
+                                <select class="form-control" id="bathrooms" name="bathrooms">
                                     <option>Please Select</option>
                                     <option>1</option>
                                     <option>1.5</option>
@@ -451,7 +452,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <label for="pets">Pets</label>
-                                <select class="form-control">
+                                <select class="form-control" id="pets" name="pets">
                                     <option>Please Select</option>
                                     <option>0</option>
                                     <option>1</option>
@@ -486,14 +487,14 @@
                 <br> Bartlett, TN 38134
 
             </div>
-            <div class="cleafirx"></div>
+            <div class="clearfix"></div>
             <div class="col-lg-6 accredidations">
                 <ul>
                     <li><img src="img/ARCSI-logo.png"></li>
                     <li><img src="img/BBB-logo.png"></li>
                 </ul>
             </div>
-            <div class="cleafirx"></div>
+            <div class="clearfix"></div>
         </div>
     </footer>
 
