@@ -6,14 +6,14 @@
     $email = filter_var(trim($_POST["Email"]), FILTER_SANITIZE_EMAIL);
     $phone = $_POST["phone"];
     $staddress = $_POST["st-address"];
-    $citystzip =$_POST["city-st-zip"];
-    $emailme =$_POST["email-me"];
-    $callme =   $_POST["call-me"];
-    $servicetype =$_POST["service-type"];
+    $citystzip = $_POST["city-st-zip"];
+    $emailme = $_POST["email-me"];
+    $callme = $_POST["call-me"];
+    $servicetype = $_POST["service-type"];
     $sqft = $_POST["sqft"];
     $rooms = $_POST["rooms"];
     $bathrooms = $_POST["bathrooms"];
-    $pets=$_POST["pets"];
+    $pets = $_POST["pets"];
 
 
 
@@ -36,11 +36,11 @@
     $email_content .= "Phone:$phone\n";
     $email_content .= "Preferred Contact: $callme $emailme \n\n";
     $email_content .= "Street Address:\n $staddress \n $citystzip \n";
-    $email_content .= "Service Type: $servicetype\n"
-    $email_content .= "Sq Ft: $sqft\n"
-    $email_content .= "Rooms: $rooms\n"
-    $email_content .= "Bathrooms: $bathrooms\n"
-    $email_content .= "Pets: $pets\n"
+    $email_content .= "Service Type: $servicetype\n";
+    $email_content .= "Sq Ft: $sqft\n";
+    $email_content .= "Rooms: $rooms\n";
+    $email_content .= "Bathrooms: $bathrooms\n";
+    $email_content .= "Pets: $pets\n";
 
 
     // Build the email headers.

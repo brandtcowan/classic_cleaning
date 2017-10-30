@@ -11,7 +11,7 @@ section {
     background: #3498db;
     color: #fff;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/kitchen-2400367_1920.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/kitchen-2400367_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(img/kitchen-2400367_1920.jpg);
     background-position: center;
     height: 100vh;
     padding-top: 20px;
