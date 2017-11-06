@@ -13,13 +13,15 @@
     $bathrooms = $_POST["bathrooms"];
     $pets = $_POST["pets"];
     $contact ="Not Specified";
+    $emailme = (isset($_POST["emailme"]) ? $_POST["emailme"] : null);
+    $callme = (isset($_POST["callme"]) ? $_POST["callme"] : null);
 
-    if($emailme = $_POST["emailme"]){
+    if($emailme != null && $callme == null ){
         $contact = "Email Me";
-    }
-
-    if($callme = $_POST["callme"]){
+    }else if($callme != null && $emailme == null ){
         $contact = "Call Me";
+    }else if($emailme != null && $callme != null){
+        $contact = "Can contact either by phone or Email";
     }
 
 
