@@ -7,13 +7,22 @@
     $phone = $_POST["phone"];
     $staddress = $_POST["staddress"];
     $citystzip = $_POST["citystzip"];
-    $emailme = $_POST["emailme"];
-    $callme = $_POST["callme"];
     $servicetype = $_POST["servicetype"];
     $sqft = $_POST["sqft"];
-    $rooms = $_POST["rooms"];
+    $rooms = $_POST["bedrooms"];
     $bathrooms = $_POST["bathrooms"];
     $pets = $_POST["pets"];
+    $contact ="Not Specified";
+
+    if($emailme = $_POST["emailme"]){
+        $contact = "Email Me";
+    }
+
+    if($callme = $_POST["callme"]){
+        $contact = "Call Me";
+    }
+
+
 
 
 
@@ -34,8 +43,8 @@
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
     $email_content .= "Phone:$phone\n";
-    $email_content .= "Preferred Contact: $callme $emailme \n\n";
-    $email_content .= "Street Address:\n $staddress \n $citystzip \n";
+    $email_content .= "Preferred Contact: $contact \n\n";
+    $email_content .= "Street Address:\n $staddress \n $citystzip \n\n";
     $email_content .= "Service Type: $servicetype\n";
     $email_content .= "Sq Ft: $sqft\n";
     $email_content .= "Rooms: $rooms\n";
