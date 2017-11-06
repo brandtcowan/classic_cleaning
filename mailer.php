@@ -1,15 +1,15 @@
 <?php
 
     // Get the form fields, removes html tags and whitespace.
-    $name = strip_tags(trim($_POST["cust-name"]));
+    $name = strip_tags(trim($_POST["custname"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["Email"]), FILTER_SANITIZE_EMAIL);
     $phone = $_POST["phone"];
-    $staddress = $_POST["st-address"];
-    $citystzip = $_POST["city-st-zip"];
-    $emailme = $_POST["email-me"];
-    $callme = $_POST["call-me"];
-    $servicetype = $_POST["service-type"];
+    $staddress = $_POST["staddress"];
+    $citystzip = $_POST["citystzip"];
+    $emailme = $_POST["emailme"];
+    $callme = $_POST["callme"];
+    $servicetype = $_POST["servicetype"];
     $sqft = $_POST["sqft"];
     $rooms = $_POST["rooms"];
     $bathrooms = $_POST["bathrooms"];
@@ -28,7 +28,7 @@
     $recipient = "brandtcowan89@gmail.com";
 
     // Set the email subject.
-    $subject = "New Contact Request from $name";
+    $subject = "New Quote Request from $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";

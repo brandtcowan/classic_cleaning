@@ -357,19 +357,21 @@
                     <h2 class="text-center"><span class="co-name">Classic Cleaning by Moms</span> Inquiry</h2>
                     <p class="text-center">Use the feedback form below for more information. Some information is required, however, more information helps us provide a more accurate quote. We value your privacy, and will not enroll you in automatic emails or share your information with anyone else.</p>
 
+
+
                     <form method="post" action="mailer.php" class="contact-form">
                         <div class="form-group">
                             <label for="name">Name *</label>
-                            <input type="text" class="form-control" id="cust-name" name="cust-name" placeholder="Enter Name" required>
+                            <input type="text" class="form-control" id="custname" name="custname" placeholder="Enter Name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="st-address">Street Address</label>
-                            <input type="text" class="form-control" id="st-address" name="st-address" placeholder="Street Address">
+                            <label for="staddress">Street Address</label>
+                            <input type="text" class="form-control" id="staddress" name="staddress" placeholder="Street Address">
                         </div>
                         <div class="form-group">
-                            <label for="city-st-zip">City, State, Zip *</label>
-                            <input type="text" class="form-control" id="city-st-zip" name="city-st-zip" placeholder="City, State, Zip" required>
+                            <label for="citystzip">City, State, Zip *</label>
+                            <input type="text" class="form-control" id="citystzip" name="citystzip" placeholder="City, State, Zip" required>
                         </div>
 
                         <div class="row">
@@ -390,17 +392,17 @@
                                 <div class="form-group">
 
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" id="email-me" name="email-me" value="email-me"> Email
+                                        <input type="checkbox" id="emailme" name="emailme" value="emailme"> Email
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" id="call-me" name="call-me" value="call-me"> Call
+                                        <input type="checkbox" id="callme" name="callme" value="callme"> Call
                                     </label>
 
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <label for="service-type">Type of Service</label>
-                                <select class="form-control" id="service-type" name="service-type">
+                                <select class="form-control" id="servicetype" name="servicetype">
                                     <option>Please Select</option>
                                     <option>Weekly</option>
                                     <option> Bi-Weekly</option>
@@ -470,7 +472,7 @@
 
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+                        <button type="submit" class="btn btn-success btn-lg btn-block" value="Send it!">Submit</button>
                     </form>
                 </div>
             </div>
