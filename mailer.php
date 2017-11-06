@@ -36,7 +36,9 @@
     }*/
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "info@classiccleaningbymoms.com";
+    //$recipient = "admin@classiccleaningbymoms.com";
+    $recipient = "brandtcowan89@gmail.com";
+    //$recipient = "donotreply@classiccleaningbymoms.com";
 
     // Set the email subject.
     $subject = "New Quote Request from $name";
@@ -55,7 +57,7 @@
 
 
     // Build the email headers.
-    $email_headers = "From: $name <$email>";
+    $email_headers = "From: donotreply@classiccleaningbymoms.com";
 
     // Send the email.
     mail($recipient, $subject, $email_content, $email_headers);
