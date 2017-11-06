@@ -34,7 +34,7 @@
     }*/
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "brandtcowan89@gmail.com";
+    $recipient = "info@classiccleaningbymoms.com";
 
     // Set the email subject.
     $subject = "New Quote Request from $name";
