@@ -47,7 +47,7 @@
     $email_content .= "Street Address:\n $staddress \n $citystzip \n\n";
     $email_content .= "Service Type: $servicetype\n";
     $email_content .= "Sq Ft: $sqft\n";
-    $email_content .= "Rooms: $rooms\n";
+    $email_content .= "Bedrooms: $rooms\n";
     $email_content .= "Bathrooms: $bathrooms\n";
     $email_content .= "Pets: $pets\n";
 
