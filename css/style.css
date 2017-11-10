@@ -1,5 +1,6 @@
 body {
     padding-top: 50px;
+    position: relative;
 }
 section {
     padding-bottom: 20px;
@@ -7,13 +8,19 @@ section {
 .navbar-brand {
     color: #3498db!important;
 }
+.help-wanted {
+    color: #3498db!important;
+}
+.help-w {
+    background: #c9c9c9!important;
+}
 .hero-box {
     background: #3498db;
     color: #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.6))), url(img/kitchen-2400367_1920.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(img/kitchen-2400367_1920.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.71)), to(rgba(0, 0, 0, 0.71))), url(img/kitchen-2400367_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(img/kitchen-2400367_1920.jpg);
     background-position: center;
-    height: 100vh;
+    height: 50vh;
     padding-top: 20px;
     background-position: fixed;
     background-size: cover;
@@ -21,7 +28,13 @@ section {
 .hero-box h1 {
     margin: 100px auto;
     font-weight: 100;
-    font-size: 300%
+    font-size: 300%;
+    /*color: #3498db!important;*/
+}
+.hero-box h2,
+h3 {
+    /*color: #3498db!important;*/
+    font-weight: 100!important;
 }
 .co-name {
     font-family: 'Satisfy', cursive;
@@ -66,6 +79,9 @@ section {
 .contact ul {
     list-style: none;
 }
+.contact {
+    background: #f0f0f0;
+}
 .contact-list i {
     margin-left: -20px;
     padding-right: 6px;
@@ -73,14 +89,11 @@ section {
 footer {
     padding-top: 30px;
     padding-bottom: 15px;
-    background: #555;
+    background: #8e8e8e;
     color: #fff
 }
 footer ul {
     list-style: none;
-}
-.contact {
-    background: #f0f0f0;
 }
 .contact-info {
     float: left;
@@ -90,11 +103,20 @@ footer ul {
 }
 .accredidations {
     float: right;
+    -ms-flex-line-pack: center;
+    padding-top: 10px;
 }
 .accredidations li {
     display: inline;
     padding-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.accredidations ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*.error {
     background-color: rgba(209, 46, 46, 0.8);
 }
