@@ -8,12 +8,14 @@ section {
 .navbar-brand {
     color: #3498db!important;
 }
-.help-wanted {
+
+/*.help-wanted {
     color: #3498db!important;
 }
 .help-w {
     background: #c9c9c9!important;
-}
+}*/
+
 .hero-box {
     background: #3498db;
     color: #fff;
