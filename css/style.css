@@ -8,14 +8,12 @@ section {
 .navbar-brand {
     color: #3498db!important;
 }
-
-/*.help-wanted {
+.navbar-right {
+    margin-right: 0px;
+}
+.help-wanted {
     color: #3498db!important;
 }
-.help-w {
-    background: #c9c9c9!important;
-}*/
-
 .hero-box {
     background: #3498db;
     color: #fff;
@@ -97,26 +95,30 @@ footer {
 footer ul {
     list-style: none;
 }
-.contact-info {
+
+/*.contact-info {
     float: left;
-}
+}*/
+
 .contact-info li {
     display: inline;
+    margin-left: auto;
+    margin-right: auto;
 }
 .accredidations {
-    float: right;
+    display: block;
+    /* float: right;*/
     -ms-flex-line-pack: center;
     padding-top: 10px;
-}
-.accredidations li {
-    display: inline;
-    padding-right: 35px;
     margin-left: auto;
     margin-right: auto;
 }
 .accredidations ul {
     margin-left: auto;
     margin-right: auto;
+}
+.accredidations ul li img {
+    display: block
 }
 
 /*.error {
