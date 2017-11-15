@@ -117,8 +117,10 @@ footer ul {
     margin-left: auto;
     margin-right: auto;
 }
-.accredidations ul li img {
-    display: block
+.accredidations img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*.error {
